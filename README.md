@@ -113,7 +113,7 @@ simplestripe-woocommerce-gateway/
   The plugin safely checks if the target status exists before applying it.
   You can customize this behavior in your theme or an additional plugin.
 </p>
-<pre>
+```php
 add_action( 'woocommerce_payment_complete', function( $order_id ) {
 $order = wc_get_order( $order_id );
 if ( ! $order ) {
@@ -130,7 +130,7 @@ if ( array_key_exists( 'wc-on-hold', wc_get_order_statuses() ) ) {
     $order->update_status( 'on-hold', 'Stripe payment confirmed.' );
 }
 });
-</pre>
+```
 
 ## WooCommerce Blocks
 
