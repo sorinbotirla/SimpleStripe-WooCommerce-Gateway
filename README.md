@@ -1,5 +1,4 @@
 
-  <body>
     <h1>SimpleStripe WooCommerce Gateway</h1>
     <p>
       <strong>SimpleStripe WooCommerce Gateway</strong> is a lightweight plugin
