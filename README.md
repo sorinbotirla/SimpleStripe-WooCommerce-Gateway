@@ -1,5 +1,5 @@
 
-#SimpleStripe WooCommerce Gateway
+# SimpleStripe WooCommerce Gateway
 
 <p>
   <strong>SimpleStripe WooCommerce Gateway</strong> is a lightweight plugin
@@ -8,7 +8,7 @@
   or commercial projects.
 </p>
 
-##Features
+## Features
 
 <ul>
   <li>Redirects customers to Stripe Checkout using the Stripe PHP SDK.</li>
@@ -19,7 +19,7 @@
   <li>Does not send duplicate emails or reprocess payments on refresh.</li>
 </ul>
 
-##Requirements
+## Requirements
 
 <ul>
   <li>WordPress 5.0+</li>
@@ -28,7 +28,7 @@
   <li>Stripe account (for API keys and webhooks)</li>
 </ul>
 
-##Folder Structure
+## Folder Structure
 
 <pre>
 simplestripe-woocommerce-gateway/
@@ -38,7 +38,7 @@ simplestripe-woocommerce-gateway/
     └── blocks.js
 </pre>
 
-##Installation
+## Installation
 
 <ol>
   <li>Download or clone this repository.</li>
@@ -46,7 +46,7 @@ simplestripe-woocommerce-gateway/
   <li>Activate the plugin from <strong>WordPress → Plugins</strong>.</li>
 </ol>
 
-##Installing Stripe PHP SDK
+## Installing Stripe PHP SDK
 
 <p>
   The plugin relies on the official <strong>Stripe PHP SDK</strong>. This is
@@ -79,7 +79,7 @@ simplestripe-woocommerce-gateway/
   <code>/home/youruser/public_html/vendor/autoload.php</code>
 </p>
 
-##Configuration
+## Configuration
 
 <ol>
   <li>Go to <strong>WooCommerce → Settings → Payments</strong>.</li>
@@ -96,7 +96,7 @@ simplestripe-woocommerce-gateway/
   </li>
 </ol>
 
-##Webhook Endpoint
+## Webhook Endpoint
 
 <p>Once configured, add this webhook to your Stripe Dashboard:</p>
 <p><code>https://your-site.tld/wp-json/simplestripe/v1/webhook</code></p>
@@ -107,7 +107,7 @@ simplestripe-woocommerce-gateway/
   <li>charge.succeeded</li>
 </ul>
 
-##Order Status Handling
+## Order Status Handling
 
 <p>
   The plugin safely checks if the target status exists before applying it.
@@ -132,7 +132,7 @@ if ( array_key_exists( 'wc-on-hold', wc_get_order_statuses() ) ) {
 });
 </pre>
 
-##WooCommerce Blocks
+## WooCommerce Blocks
 
 <p>
   The plugin automatically registers its payment method with WooCommerce
@@ -140,14 +140,14 @@ if ( array_key_exists( 'wc-on-hold', wc_get_order_statuses() ) ) {
   checkout page.
 </p>
 
-##Notes
+## Notes
 <ul>
   <li>Does not include the Stripe PHP SDK — install it manually or with Composer.</li>
   <li>Webhook verification requires a valid signing secret from Stripe.</li>
   <li>If you fork this repository, update the REST route and text domain.</li>
 </ul>
 
-##License
+## License
 <p>
   Open source under MIT or GPL-2.0+. You can choose the license when
   publishing on GitHub.
