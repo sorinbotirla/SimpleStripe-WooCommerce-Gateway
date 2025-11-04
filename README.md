@@ -142,7 +142,7 @@ if ( array_key_exists( 'wc-on-hold', wc_get_order_statuses() ) ) {
 
 ## Notes
 <ul>
-  <li>Does not include the Stripe PHP SDK — install it manually or with Composer.</li>
+  <li>Does not include the Stripe PHP SDK - install it manually or with Composer.</li>
   <li>Webhook verification requires a valid signing secret from Stripe.</li>
   <li>If you fork this repository, update the REST route and text domain.</li>
 </ul>
