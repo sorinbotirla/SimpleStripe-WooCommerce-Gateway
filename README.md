@@ -149,6 +149,5 @@ if ( array_key_exists( 'wc-on-hold', wc_get_order_statuses() ) ) {
 
 ## License
 <p>
-  Open source under MIT or GPL-2.0+. You can choose the license when
-  publishing on GitHub.
+  Open source under MIT
 </p>
